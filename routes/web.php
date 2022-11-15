@@ -59,28 +59,18 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/logout', [AuthenticatedSessionController::class, 'destroy']);
 	Route::get('/user-profile', [InfoUserController::class, 'create']);
 	Route::post('/user-profile', [InfoUserController::class, 'store']);
-    Route::get('/login', function () {
-		return view('dashboard');
-	})->name('sign-up');
 });
 
-
-
 Route::group(['middleware' => 'guest'], function () {
-    Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
-    Route::post('/register', [RegisteredUserController::class, 'store']);
-    Route::get('/login', [AuthenticatedSessionController::class, 'create']);
-    Route::post('/session', [AuthenticatedSessionController::class, 'store']);
+    Route::get('/register', [RegisteredUserController::class, 'create'])->name('register-page');
+    Route::post('/register', [RegisteredUserController::class, 'store'])->name('register-post');
+    Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login-page');
+    Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('login-post');
 	Route::get('/login/forgot-password', [ResetController::class, 'create']);
 	Route::post('/forgot-password', [ResetController::class, 'sendEmail']);
 	Route::get('/reset-password/{token}', [ResetController::class, 'resetPass'])->name('password.reset');
 	Route::post('/reset-password', [ChangePasswordController::class, 'changePassword'])->name('password.update');
-
 });
-
-Route::get('/login', function () {
-    return view('session/login-session');
-})->name('login');
 
 //Projeto
 Route::get('/', function () {
@@ -107,4 +97,4 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-//require __DIR__.'/auth.php';
+require __DIR__.'/auth.php';
