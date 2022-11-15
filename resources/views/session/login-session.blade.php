@@ -13,7 +13,7 @@
                   <h1 class="mb-0" style="color: #aebe27">eDayGrees</h1>
                 </div>
                 <div class="card-body">
-                  <form role="form" method="POST" action="/session">
+                  <form role="form" method="POST" action="{{ route('login-post') }}">
                     @csrf
                     <label>Email</label>
                     <div class="mb-3">
