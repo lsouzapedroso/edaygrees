@@ -19,6 +19,8 @@
             </div>
          </div>
       </div>
+
+      <!-- Serviços oferecidos no sistema -->
       <div class="container">
          <div class="row">
             <h1 class="col mt-4 mb-4 text-center " style="color: #aebe27">Serviços oferecidos em nosso sistema</h1>
@@ -27,7 +29,7 @@
       </div>
       <div class="container">
          <div class="row">
-            <div class="col-xl-3 mx-auto">
+            <div class="col-sm-3 mx-auto">
                <div class="card" style="width: 20rem;">
                   <img class="card-img-top" src="images/controleClima.jpg" alt="controleClima">
                   <div class="card-body bg-transparent">
@@ -53,6 +55,58 @@
                      <p class="card-text">Geração de relatórios diários para possivel acompanhamento de como anda a cultura. Dados como graus acumulados, ciclo, além dos avisos e o clima em tempo real.</p>
                   </div>
                </div>
+            </div>
+
+            <!-- Equipe de desenvolvimento -->
+            <div class="container">
+               <div class="row">
+                  <h1 class="col mt-4 mb-4 text-center " style="color: #aebe27">Nossa equipe de desenvolvimento</h1>
+                  <span class="border mb-4"></span>
+               </div>
+               <div class="container">
+                  <div class="row">
+                     <!--Dev 1 -->
+                     <div class="col-sm-1 mx-auto">
+                        <div class="card" style="width: 20rem;">
+                           <img class="card-img img-fluid" src="images/equipe1.jpg" alt="Dev Tiago Alves">
+                           <div class="card-img-overlay">
+                              <h5 class="card-title">Tiago Alves</h5>
+                              <p class="card-text">Ex militar, acadêmico de ciência da Computação bacharel</p>
+                           </div>
+                        </div>
+                     </div>
+                     <!--Dev 2 -->
+                     <div class="col-sm-3 mx-auto">
+                        <div class="card" style="width: 20rem;">
+                           <img class="card-img-top img-fluid" src="images/equipe2.jpg" alt="Dev Mark Willian">
+                           <div class="card-img-overlay">
+                              <h5 class="card-title">Mark Willian</h5>
+                              <p class="card-text">Técnico em Agropecuária, acadêmico de ciência da Computação bacharel</p>
+                           </div>
+                        </div>
+                     </div>
+                     <!--Dev 3 -\\\\\\\\\\\\\\\\\\->
+                     <div class="col-sm-3 mx-auto">
+                        <div class="card" style="width: 20rem;">
+                           <img class="card-img-top" src="images/equipe3.jpg" alt="Dev Gabriel Krysa">
+                           <div class="card-img-overlay">
+                              <h5 class="card-title">Gabriel Krysa</h5>
+                              <p class="card-text">Programador, acadêmico de ciência da Computação bacharel</p>
+                           </div>
+                        </div>
+                     </div>
+                     <!--Professor -\\\\\\\\\\\\\\\\\\->
+                     <div class="col-sm-3 mx-auto">
+                        <div class="card" style="width: 20rem;">
+                           <img class="card-img-top" src="images/professor.jpg" alt="Professor Marcos Quinaia">
+                           <div class="card-img-overlay">
+                              <h5 class="card-title">Marcos Quinaia</h5>
+                              <p class="card-text">Professor</p>
+                           </div>
+                        </div>
+                     </div>
+                     -->
+                  </div>
             </div>
          </div>
       </div>

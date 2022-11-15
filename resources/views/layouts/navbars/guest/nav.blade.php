@@ -39,6 +39,12 @@
             Login
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link me-2" href="{{ route('about') }}">
+            <i class="fas fa-question opacity-6 me-1 {{ (Request::is('static-sign-up') ? '' : 'text-dark') }}"></i>
+            Sobre
+          </a>
+        </li>
       </ul>
     </div>
   </div>
