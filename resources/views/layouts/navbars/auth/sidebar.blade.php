@@ -23,7 +23,7 @@
         </a>
       </li>
       <li class="nav-item pb-2">
-        <a class="nav-link {{ (Request::is('user-management') ? 'active' : '') }}" href="{{ url('user-management') }}">
+        <a class="nav-link {{ (Request::is('crops') ? 'active' : '') }}" href="{{ url('cultivares') }}">
             <span class="nav-link-text ms-1">Meus cultivares</span>
         </a>
       </li>

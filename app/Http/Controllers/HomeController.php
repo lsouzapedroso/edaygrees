@@ -8,6 +8,20 @@ class HomeController extends Controller
 {
     public function home()
     {
-        return redirect('dashboard');
+        return view('index');
+    }
+
+    public function about()
+    {
+        return view('about');
+    }
+
+    public function contact()
+    {
+        return view('mail');
+    }
+    public function gallery()
+    {
+        return view('gallery');
     }
 }

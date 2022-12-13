@@ -17,7 +17,7 @@
                   <div class="card-body bg-transparent">
                      <h5 class="card-title">Quem somos?</h5>
                      <p class="card-text" style="font-size: 14px">
-                        A história do software eDayGress surgiu com uma parceria entra o departamento de Ciência da Computação 
+                        A história do software eDayGress surgiu com uma parceria entra o departamento de Ciência da Computação
                         com membros Graduados na área da Agronomia, com vista sempre no bem estar e facilidade de uso. Esse sistema
                         foi muito bem planejado com diversas idéias e aplicações usando as melhores técnicas e aprendizados para
                         sua funcionalidade ser a mais completa possivel. Tem a garantir um controle prático de produções em propriedades
@@ -32,8 +32,8 @@
                   <div class="card-body">
                      <h5 class="card-title">Missão</h5>
                      <p class="card-text" style="font-size: 14px">
-                        Proporcionar as pessoas uma melhor qualidade de vida, dando suporte a produção. Com base nesse método de 
-                        acompanhamento prático e fácil de usar. Proporcionando assim uma vida mais leve. Aplicação de atualizações para 
+                        Proporcionar as pessoas uma melhor qualidade de vida, dando suporte a produção. Com base nesse método de
+                        acompanhamento prático e fácil de usar. Proporcionando assim uma vida mais leve. Aplicação de atualizações para
                         melhoria de nosso suporte para as pessoas que estão utulizando nosso sistema
                      </p>
                   </div>
