@@ -4,6 +4,7 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\SessionsController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\OpenWeatherController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -88,5 +89,6 @@ Route::get('/contato', [HomeController::class, 'contact'])->name('contact');
 Route::get('/galeria', [HomeController::class, 'gallery'])->name('gallery');
 //Route::get('/login', [HomeController::class, 'login'])->name('login');
 
-
+//APAGAR!!!
+Route::get('/apiTest/{lat}/{lon}/{metrics?}', [OpenWeatherController::class, 'getResponse']);
 require __DIR__.'/auth.php';
