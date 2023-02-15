@@ -14,7 +14,7 @@ class OpenWeatherController extends Controller
      * @param $lon Longitude
      * @param $units Units of measurement
      */
-    public function getResponse($lat, $lon, $units = 'metric')
+    public static function getResponse($lat, $lon, $units = 'metric')
     {
         $response = Http::get(env('OPEN_WEATHER_URL'), [
             'lat' => $lat,
