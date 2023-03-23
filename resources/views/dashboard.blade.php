@@ -1,17 +1,26 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+<!DOCTYPE html>
+<head>
+  <title>Menu</title>
+</head>
+<body>
+    <a href="{{ route('logout') }}">Logout</a>
+<a href="{{ route('createTask') }}">NewTask</a>
+<a href="{{ route('profile') }}">{{$user->name}}</a>
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
-                    You're logged in!
-                </div>
-            </div>
-        </div>
-    </div>
-</x-app-layout>
+<table>
+  <thead>
+      <tr>
+          <th>Nome da Tarefa</th>
+          <th>Descrição da Tarefa</th>
+      </tr>
+  </thead>
+  <tbody>
+      @foreach($tasks as $tasks)
+          <tr>
+              <td><a href="{{ route('readTaskCreate', ['id' => $tasks->task_id]) }}">{{ $tasks->task_name }}    </a></td>
+              <td>{{ $tasks->description }}</td>
+          </tr>
+      @endforeach
+  </tbody>
+</table>
+</body>
