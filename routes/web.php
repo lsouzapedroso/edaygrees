@@ -91,4 +91,5 @@ Route::get('/galeria', [HomeController::class, 'gallery'])->name('gallery');
 
 //APAGAR!!!
 Route::get('/apiTest/{lat}/{lon}/{metrics?}', [OpenWeatherController::class, 'getResponse']);
+Route::get('/teste', function() { return view('teste'); });
 require __DIR__.'/auth.php';
